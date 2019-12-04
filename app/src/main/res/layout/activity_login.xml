@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#C620DB29"
+    android:padding="30dp"
+    android:background="@color/background"
     tools:context=".LoginActivity">
 
     <TextView
@@ -13,55 +14,77 @@
         android:layout_height="wrap_content"
         android:hint="Login"
         android:gravity="center"
+        android:textColorHint="@color/colorAccent"
         android:textSize="40dp"
-        android:background="#8C8E9C"
         android:layout_gravity="center"/>
 
-    <EditText
-        android:id="@+id/et_emailphonenumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textSize="20dp"
-        android:layout_marginTop="100dp"
-        android:inputType="text"
-        android:hint="Email/Phone Number"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/nnn"
+        android:padding="10dp"
+        />
 
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:textSize="20dp"
-        android:layout_marginTop="50dp"
-        android:inputType="text"
-        android:hint="Password"/>
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent">
+
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Email or Phone Number"
+            android:inputType="text"
+            android:textSize="20dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/colorAccent">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/et_cpassword"
+        android:layout_gravity="right"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:text="Login"
-        android:layout_alignParentBottom="true"/>
+        android:background="@drawable/drawable_rounded"
+        android:text="Login" />
 
-    <TextView
-        android:id="@+id/forgotpasswordlink"
+    <Button
+        android:id="@+id/btn_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Forgot Password? Click Here"/>
-    <TextView
-        android:id="@+id/createnewaccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:text="Create a new account? Sign Up Here"/>
+        android:text="Create a New Account? Sign Up Here"
+        android:onClick="btn_SignupForm"
+        android:gravity="center" />
+
+
+
+
 
 </LinearLayout>
