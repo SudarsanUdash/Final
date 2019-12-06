@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/first"
     android:padding="30dp">
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Registration"
-            android:textColorHint="@color/colorAccent"
+            android:textColorHint="@color/white"
             android:textSize="30dp"
             android:gravity="center"/>
 
@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+            android:textColorHint="@color/white">
 
             <EditText
                 android:layout_width="match_parent"
@@ -58,7 +58,7 @@
             android:layout_height="match_parent"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+            android:textColorHint="@color/white">
 
             <EditText
                 android:layout_width="match_parent"
@@ -77,7 +77,7 @@
             android:layout_height="match_parent"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+            android:textColorHint="@color/white">
 
             <EditText
                 android:layout_width="match_parent"
@@ -96,7 +96,7 @@
             android:layout_height="match_parent"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+            android:textColorHint="@color/white">
 
             <EditText
                 android:layout_width="match_parent"
@@ -115,7 +115,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             app:passwordToggleEnabled="true"
-            android:textColorHint="@color/colorAccent">
+            android:textColorHint="@color/white">
 
             <EditText
                 android:layout_width="match_parent"
@@ -135,7 +135,7 @@
             android:focusable="true"
             app:passwordToggleEnabled="true"
             android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+            android:textColorHint="@color/white">
 
             <EditText
                 android:layout_width="match_parent"
@@ -183,6 +183,7 @@
             android:id="@+id/link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:text="Catch a glimpse of us?"

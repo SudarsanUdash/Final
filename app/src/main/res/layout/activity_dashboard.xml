@@ -4,40 +4,214 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+android:background="@color/background"
     android:orientation="vertical"
 
     tools:context=".DashboardActivity">
     <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/first">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:textColorHint="@color/colorAccent"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:background="@drawable/logo"
+
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:textColorHint="@color/colorAccent"
+            android:text="HOME"
+            android:gravity="center"
+            android:textSize="20dp"
+
+
+            />
+
+        <info.androidhive.fontawesome.FontTextView
+            android:layout_marginLeft="135dp"
+            android:onClick="ShowPopup"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+
+            app:solid_icon="true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/f1"
+    android:layout_below="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
+    <LinearLayout
+        android:layout_below="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nnn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop"
+            android:background="@color/first"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nnn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop"
+            android:background="@color/first"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+         android:id="@+id/f2"
+        android:layout_below="@+id/f1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"/>
-    <Button
-        android:onClick="ShowPopup"
-        android:textColor="#ffffff"
-        android:background="@drawable/nnn"
-        android:layout_width="70dp"
-        android:layout_height="70dp" />
-    <TextView
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nnn"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shop"
+                android:background="@color/first"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nnn"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shop"
+                android:background="@color/first"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_below="@+id/f2"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:hint="Ilam Tea Garden"
-        android:textColorHint="@color/colorAccent"
-        android:paddingRight="40dp"
-        android:paddingBottom="40dp"
-        android:gravity="center"
-        android:textSize="30dp"
-        ></TextView>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nnn"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shop"
+                android:background="@color/first"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nnn"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shop"
+                android:background="@color/first"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
 
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true">
-
-
-
-
-    </ScrollView>
 </RelativeLayout>
