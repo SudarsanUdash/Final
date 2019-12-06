@@ -3,5 +3,16 @@
     <color name="colorPrimary">#2D383F</color>
     <color name="colorPrimaryDark">#2D383F</color>
     <color name="colorAccent">#FF6C02</color>
+    <color name="colorProfile">#1357BD</color>
     <color name="background">#EEEDEF</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#CA9310</color>
+    <color name="green">#10F01B</color>
+    <color name="danger">#EB0231</color>
+
+    <color name="first">#04A50E</color>
+    <color name="second">#0673D3</color>
+    <color name="third">#383838</color>
+
+
 </resources>
