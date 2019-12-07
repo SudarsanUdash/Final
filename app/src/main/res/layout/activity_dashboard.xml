@@ -8,210 +8,292 @@ android:background="@color/background"
     android:orientation="vertical"
 
     tools:context=".DashboardActivity">
-    <LinearLayout
-        android:id="@+id/top"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:background="@color/first">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:textColorHint="@color/colorAccent"
-            android:gravity="center"
-            android:textSize="30dp"
-            android:background="@drawable/logo"
-
-            />
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:textColorHint="@color/colorAccent"
-            android:text="HOME"
-            android:gravity="center"
-            android:textSize="20dp"
 
 
-            />
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:background="@color/first">
 
-        <info.androidhive.fontawesome.FontTextView
-            android:layout_marginLeft="135dp"
-            android:onClick="ShowPopup"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-
-            android:background="@drawable/ic_account_circle_black_24dp"
-            android:textColor="@color/white"
-            android:textSize="40dp"
-            android:gravity="end"
-            android:layout_marginTop="10dp"
-
-            app:solid_icon="true" />
-
-
-    </LinearLayout>
 
     <LinearLayout
-    android:id="@+id/f1"
-    android:layout_below="@+id/top"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginTop="20dp">
-    <LinearLayout
-        android:layout_below="@+id/top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:orientation="vertical">
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:src="@drawable/nnn"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Shop"
-            android:background="@color/first"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_below="@+id/top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:orientation="vertical">
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:src="@drawable/nnn"/>
+                <LinearLayout
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:background="@color/first">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Shop"
-            android:background="@color/first"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:textColorHint="@color/colorAccent"
+                        android:gravity="center"
+                        android:textSize="30dp"
+                        android:background="@drawable/logo"
 
-    </LinearLayout>
-</LinearLayout>
-    <LinearLayout
-         android:id="@+id/f2"
-        android:layout_below="@+id/f1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <LinearLayout
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:textColorHint="@color/colorAccent"
+                        android:text="HOME"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        />
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:src="@drawable/nnn"/>
+                    <info.androidhive.fontawesome.FontTextView
+                        android:layout_marginLeft="135dp"
+                        android:onClick="ShowPopup"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
 
-            <Button
+                        android:background="@drawable/ic_account_circle_black_24dp"
+                        android:textColor="@color/white"
+                        android:textSize="40dp"
+                        android:gravity="end"
+                        android:layout_marginTop="10dp"
+                        app:solid_icon="true" />
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/top"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tea" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ilam Tea Garden"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Shop"
-                android:background="@color/first"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                />
+                android:orientation="vertical"
+                android:layout_marginTop="215dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_below="@+id/top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:src="@drawable/nnn"/>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Shop"
-                android:background="@color/first"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp">
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:orientation="vertical">
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/shopp">
+
+                           <Button
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:id="@+id/buttonProfile"
+                               android:background="@android:color/transparent"/>
+
+                       </RelativeLayout>
+
+
+                   </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/addproducts">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add Products"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="110dp"
+                                />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonShop"
+                                android:background="@android:color/transparent"/>
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/aboutus">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonForum"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/forum">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonGOAL"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/order">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonXXX"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/contact">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonCCC"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
     </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
 
-        android:layout_below="@+id/f2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <LinearLayout
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:src="@drawable/nnn"/>
+</ScrollView>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Shop"
-                android:background="@color/first"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_below="@+id/top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:src="@drawable/nnn"/>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Shop"
-                android:background="@color/first"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                />
-
-        </LinearLayout>
-    </LinearLayout>
 
 
 </RelativeLayout>
