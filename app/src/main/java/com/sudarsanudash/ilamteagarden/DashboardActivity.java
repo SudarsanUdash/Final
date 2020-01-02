@@ -7,37 +7,46 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
-import java.util.ArrayList;
+import com.google.android.material.tabs.TabLayout;
+import com.sudarsanudash.ilamteagarden.Adapter.ViewPageDashboardAdapter;
+import com.sudarsanudash.ilamteagarden.Fragments.ContactUsFragment;
+import com.sudarsanudash.ilamteagarden.Fragments.SellFragment;
+import com.sudarsanudash.ilamteagarden.Fragments.ShopFragment;
 
 public class DashboardActivity extends AppCompatActivity {
 
     Dialog myDialog;
-    Button buttonProfile;
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-
-        buttonProfile = findViewById(R.id.buttonProfile);
-
-        buttonProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(DashboardActivity.this, shopNowActivity.class);
-                startActivity(intent);
-
-            }
-        });
         myDialog = new Dialog(this);
+
+        viewPager = findViewById(R.id.viewPager);
+        tabLayout = findViewById(R.id.tabId);
+
+        tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#ffffff"));
+        ViewPageDashboardAdapter viewPageDashboardAdapter = new ViewPageDashboardAdapter(getSupportFragmentManager());
+        viewPageDashboardAdapter.addFragment(new ShopFragment(),"Shop");
+        viewPageDashboardAdapter.addFragment(new ContactUsFragment(),"Contact Us");
+        viewPageDashboardAdapter.addFragment(new SellFragment(),"Sell");
+
+
+        viewPager.setAdapter(viewPageDashboardAdapter);
+        tabLayout.setupWithViewPager(viewPager);
+
+
+
     }
 
 

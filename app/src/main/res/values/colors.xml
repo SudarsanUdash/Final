@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#2D383F</color>
     <color name="colorPrimaryDark">#2D383F</color>
-    <color name="colorAccent">#FF6C02</color>
+    <color name="colorAccent">#1765EB</color>
     <color name="colorProfile">#1357BD</color>
     <color name="background">#EEEDEF</color>
     <color name="white">#ffffff</color>
@@ -10,10 +10,11 @@
     <color name="black">#110C01</color>
     <color name="green">#10F01B</color>
     <color name="danger">#EB0231</color>
-    <color name="first">#04A50E</color>
+    <color name="first">#3D6DCE</color>
     <color name="second">#0673D3</color>
     <color name="third">#383838</color>
     <color name="four">#6995F0</color>
+
 
 
 </resources>

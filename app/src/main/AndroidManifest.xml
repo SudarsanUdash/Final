@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShopDetailsActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".DashboardActivity">
             <intent-filter>
@@ -20,7 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".shopNowActivity" />
     </application>
 
 </manifest>
