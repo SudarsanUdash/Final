@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1054171214066",
+    "firebase_url": "https://ilamteagardenproject.firebaseio.com",
+    "project_id": "ilamteagardenproject",
+    "storage_bucket": "ilamteagardenproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054171214066:android:a71bb15e8f6efe398e606b",
+        "android_client_info": {
+          "package_name": "com.sudarsanudash.ilamteagarden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054171214066-ap3tc7b6tq1v7fh1o7e4ahpenr5tgnts.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sudarsanudash.ilamteagarden",
+            "certificate_hash": "e9fe4389fa2eae1fcbc8cb938a3f61e705be0bd1"
+          }
+        },
+        {
+          "client_id": "1054171214066-12asve5keoslv54pi5fi2b0bguu6qp04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-RRgwziXjPIvMjrPGjUm5oYKcWqZpz4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054171214066-12asve5keoslv54pi5fi2b0bguu6qp04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

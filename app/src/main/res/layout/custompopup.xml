@@ -10,7 +10,7 @@
         android:id="@+id/Close"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/white"
         android:text="X"
         android:gravity="right"
         android:textSize="30dp"
